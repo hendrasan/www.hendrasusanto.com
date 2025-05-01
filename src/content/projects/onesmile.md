@@ -1,6 +1,6 @@
 ---
 title: Onesmile Doctor Portal
-description: A platform for Dentists and Orthodontists to order aligner treatments for their patients. I'm responsible for the frontend and API integration. Built with Nuxt.js, Tailwind CSS, and API integration with Laravel backend.
+description: A platform for Dentists and Orthodontists to order aligner treatments for their patients.
 link: https://onesmile-git-frontend-hendrasusanto.vercel.app/
 order: 1
 publishDate: 'Jun 10 2024'
@@ -15,7 +15,7 @@ Onesmile Doctor Portal is a platform designed for Dentists and Orthodontists to 
 
 ## Objectives
 
-Develop a user-friendly platform that allows Dentists and Orthodontists to easily order aligner treatments and manage patient treatment plans.
+Develop a user-friendly frontend that allows Dentists and Orthodontists to easily order aligner treatments and manage patient treatment plans.
 
 ## Technology Stack
 
