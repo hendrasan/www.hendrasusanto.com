@@ -39,7 +39,7 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-    website: 'https://example.com',
+    website: 'https://www.hendrasusanto.com',
     title: 'Hendra Susanto - Web Developer',
     subtitle: 'Minimal Astro.js theme',
     description: 'Hendra Susanto - A web developer with 10+ years of experience in front-end and back-end development',
