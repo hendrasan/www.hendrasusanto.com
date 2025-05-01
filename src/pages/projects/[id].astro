@@ -24,7 +24,7 @@ type Props = {
 };
 
 const { project, prevProject, nextProject } = Astro.props;
-const { title, description, seo } = project.data;
+const { title, description, seo, link } = project.data;
 const { Content } = await render(project);
 ---
 
@@ -34,13 +34,23 @@ const { Content } = await render(project);
             <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight">{title}</h1>
         </header>
         <div class="max-w-none prose sm:prose-lg">
+            {link && (
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                    Project Link
+                </a>
+            )}
             <Content />
+            {link && (
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                    Project Link
+                </a>
+            )}
         </div>
     </article>
     {
         (prevProject || nextProject) && (
             <div class="my-16 sm:my-24">
-                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">View Next</h2>
+                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">View Other Projects</h2>
                 {nextProject && <ProjectPreview project={nextProject} class="mb-10 sm:mb-12" headingLevel="h3" />}
                 {prevProject && <ProjectPreview project={prevProject} class="mb-10 sm:mb-12" headingLevel="h3" />}
             </div>

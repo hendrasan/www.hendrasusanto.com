@@ -40,9 +40,9 @@ export type SiteConfig = {
 
 const siteConfig: SiteConfig = {
     website: 'https://example.com',
-    title: 'Dante',
+    title: 'Hendra Susanto - Web Developer',
     subtitle: 'Minimal Astro.js theme',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
+    description: 'Hendra Susanto - A web developer with 10+ years of experience in front-end and back-end development',
     image: {
         src: '/dante-preview.jpg',
         alt: 'Dante - Astro.js and Tailwind CSS theme'
@@ -65,36 +65,11 @@ const siteConfig: SiteConfig = {
             href: '/tags'
         }
     ],
-    footerNavLinks: [
-        {
-            text: 'About',
-            href: '/about'
-        },
-        {
-            text: 'Contact',
-            href: '/contact'
-        },
-        {
-            text: 'Terms',
-            href: '/terms'
-        },
-        {
-            text: 'Download theme',
-            href: 'https://github.com/JustGoodUI/dante-astro-theme'
-        }
-    ],
+    footerNavLinks: [],
     socialLinks: [
         {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
-        },
-        {
-            text: 'Instagram',
-            href: 'https://instagram.com/'
-        },
-        {
-            text: 'X/Twitter',
-            href: 'https://twitter.com/'
+            text: 'CV',
+            href: ''
         }
     ],
     hero: {
@@ -103,13 +78,13 @@ const siteConfig: SiteConfig = {
         image: {
             src: '/hero.jpeg',
             alt: 'A person sitting at a desk in front of a computer'
-        },
-        actions: [
-            {
-                text: 'Get in Touch',
-                href: '/contact'
-            }
-        ]
+        }
+        // actions: [
+        //     {
+        //         text: 'Get in Touch',
+        //         href: '/contact'
+        //     }
+        // ]
     },
     subscribe: {
         title: 'Subscribe to Dante Newsletter',
