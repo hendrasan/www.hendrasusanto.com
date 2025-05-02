@@ -1,0 +1,195 @@
+{
+    "basics": {
+        "name": "Hendra Susanto",
+        "label": "Web Developer",
+        "picture": "",
+        "email": "anotherhendrasusanto@gmail.com",
+        "phone": "0896 0449 0888",
+        "website": "https://www.hendrasusanto.com",
+        "summary": "Experienced web developer based in Jakarta with 10+ years of experience, capable in doing both front-end and back-end development. Proficient in CSS, JavaScript, Nuxt.js, Next.js for front-end development, Laravel and MySQL/PostgreSQL for back-end development.<br /><br />I'm familiar with modern workflows such as unit/integration testing, CI/CD, etc, and I'm adaptable to any specific workflows in different companies.",
+        "location": {
+            "address": "",
+            "postalCode": "",
+            "city": "Jakarta",
+            "countryCode": "ID",
+            "region": "Jakarta Barat"
+        },
+        "profiles": [
+            {
+                "network": "Codepen",
+                "username": "benhanks040888",
+                "url": "https://codepen.io/hendrasusanto"
+            },
+            {
+                "network": "Github",
+                "username": "benhanks040888",
+                "url": "https://github.com/hendrasan"
+            },
+            {
+                "network": "Linkedin",
+                "username": "susantohendra",
+                "url": "https://linkedin.com/in/susantohendra"
+            }
+        ]
+    },
+    "work": [
+        {
+            "position": "Web Developer",
+            "company": "Freelance",
+            "startDate": "Oct 2022",
+            "endDate": "Current",
+            "summary": "During the employment gap, I undertake freelance web development projects, ranging from front-end product development with Nuxt.js and Next.js to PageSpeed optimizations.",
+            "skills": ["Nuxt.js", "Next.js", "Typescript", "Tailwind CSS", "PageSpeed Optimization"]
+        },
+        {
+            "position": "Front End Developer",
+            "company": "Cognotiv",
+            "startDate": "Nov 2023",
+            "endDate": "Jun 2024",
+            "summary": "My daily work revolves around revamping to new design and implementing new features",
+            "skills": ["Vue.js", "Typescript", "Tailwind CSS"]
+        },
+        {
+            "company": "Allstars",
+            "position": "Web Development Manager",
+            "website": "https://www.allstars.id",
+            "startDate": "Jun 2019",
+            "endDate": "Oct 2022",
+            "summary": "I led the team to build an influencer platform from its inception.<br /><br />Allstars is an influencer platform that enables brands and influencers to connect to each other, think job board but for influencer marketing.",
+            "highlights": [
+                "Built a well functioning platform that houses more than 100 thousand social media accounts and more than 3 thousand published campaigns",
+                "Digitalize the internal process of the company by creating several internal dashboard for various purposes",
+                "Built a pipeline process to update the data of social media accounts"
+            ],
+            "responsibilities": [
+                "Involvements in Product Development from planning and detailing feature specification to implementation",
+                "Collaborate with Product Manager in developing the products",
+                "Based on analytics, discuss on new features to be developed and/or existing features to be improved",
+                "Provide technical consultations to other departments and/or to clients",
+                "Hands on daily coding on the development of the products",
+                "Setting up development standard, guideline and workflow",
+                "Ensure the quality and deliverable of features based on the timeline and product roadmap",
+                "Provide mentoring to junior developers"
+            ],
+            "skills": ["Laravel", "MySQL", "CSS", "Javascript", "Vue.js"]
+        },
+        {
+            "company": "Mirum Jakarta",
+            "position": "Technical Lead",
+            "website": "https://mirumagency.com",
+            "startDate": "Feb 2015",
+            "endDate": "May 2019",
+            "summary": "As Technical Lead, besides doing hands-on coding daily, other responsibilites include setting up development standard, guideline and workflow and mentoring for the team, provide technical consultations to other departments and/or to clients",
+            "responsibilities": [
+                "Work closely with the development team, identifying each member's strength and weakness",
+                "Provide guidance and mentoring to team members",
+                "Keep up to date with latest technology and implement them as needed",
+                "Set up development standard, guideline and workflow for the team",
+                "Ensure the highest possible quality of works that can be delivered within the provided timeline",
+                "Provide technical consultations to other departments and/or to clients"
+            ],
+            "skills": ["Laravel", "MySQL", "CSS", "Javascript", "Vue.js"]
+        },
+        {
+            "company": "XM Gravity",
+            "position": "Web Development Manager",
+            "website": "https://mirumagency.com",
+            "startDate": "Apr 2014",
+            "endDate": "Feb 2015",
+            "summary": "Job description is like Senior Web Developer, with extra responsibility to provide guidance and mentorship to other developers"
+        },
+        {
+            "company": "XM Gravity",
+            "position": "Back-end Developer",
+            "website": "https://mirumagency.com",
+            "startDate": "Oct 2011",
+            "endDate": "Mar 2014",
+            "summary": "Develop and maintain client websites (primarily ibudanbalita.com) using PHP (Laravel), MySQL, CSS3, jQuery, AJAX"
+        }
+    ],
+    "education": [
+        {
+            "institution": "PMCI",
+            "area": "Information Technology",
+            "studyType": "Bachelor",
+            "startDate": "2005",
+            "endDate": "2008",
+            "gpa": "3.44"
+        }
+    ],
+    "awards": [
+        {
+            "title": "Award",
+            "date": "2020-11-01",
+            "awarder": "Company",
+            "summary": ""
+        }
+    ],
+    "skills": [
+        {
+            "name": "Front-end Development",
+            "level": "Proficient",
+            "keywords": [
+                "HTML",
+                "CSS",
+                "Tailwind CSS",
+                "Javascript",
+                "Typescript",
+                "Vue.js",
+                "Nuxt.js",
+                "React.js",
+                "Next.js",
+                "Responsive Website Development"
+            ]
+        },
+        {
+            "name": "Back-end Development",
+            "level": "Proficient",
+            "keywords": ["PHP", "Laravel", "MySQL/PostgreSQL", "Node.js (Express)"]
+        },
+        {
+            "name": "Others",
+            "level": "Proficient",
+            "keywords": ["Git", "Gulp", "Figma", "PageSpeed Optimization"]
+        }
+    ],
+    "portfolios": [
+        {
+            "name": "Baca Dhammapada",
+            "url": "https://baca-dhammapada-nuxt.vercel.app",
+            "description": "A simple web app to read Dhammapada in Indonesian. Built with Nuxt.js, Tailwind CSS, and API integration with Laravel backend"
+        },
+        {
+            "name": "Onesmile Doctor Portal",
+            "url": "https://onesmile-git-frontend-hendrasusanto.vercel.app",
+            "description": "Platform for Dentists and Orthodontists to order aligner treatments for their patients. Development is finished but still awaiting for deployment to production. Built with Nuxt.js, Tailwind CSS, and API integration with Laravel backend"
+        },
+        {
+            "name": "Wordle ID",
+            "url": "https://wordle-id.vercel.app",
+            "description": "A Wordle clone, similar with Katla but with endless mode. Built with Next.js"
+        },
+        {
+            "name": "Allstars",
+            "url": "https://www.allstars.id",
+            "description": "A platform for influencer looking for works and brands looking for influencers. Separated into influencer-facing and client-facing dashboards/platforms to ease the collaboration process. Built with Laravel, MySQL, jQuery and CSS"
+        },
+        {
+            "name": "Saga",
+            "url": "https://www.saga.id",
+            "role": "Front-end",
+            "description": "A product development studio based in Jakarta, Indonesia. My role is converting the design from Figma to the functioning responsive site"
+        },
+        {
+            "name": "Famous.id",
+            "url": "https://www.famous.id",
+            "description": "A site for an influencer management agency in Jakarta, Indonesia. My role is handling both the backend (including custom CMS to manage the site) and the frontend. Built with Laravel, MySQL for the backend and jQuery and CSS for the frontend"
+        },
+        {
+            "name": "Ibudanbalita",
+            "url": "https://www.ibudanbalita.com",
+            "role": "Back-end, Front-end",
+            "description": "A Frisian Flag portal for mothers that is pretty popular. Although the site was handed over to another agency, the current version still uses most of what I had developed during my time in XM Gravity/Mirum. Built with Laravel, MySQL and other standard frontend tools at the time"
+        }
+    ]
+}

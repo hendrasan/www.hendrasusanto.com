@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+:root {
+    --color-primary: #42b983;
+}
+
+@theme {
+    --font-inconsolata: 'Inconsolata', sans-serif;
+    --font-sans: 'Open Sans', sans-serif;
+}
+
+@layer base {
+    a {
+        text-decoration: underline;
+        color: var(--color-primary);
+    }
+
+    @media print {
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+}
