@@ -69,7 +69,7 @@ const siteConfig: SiteConfig = {
     socialLinks: [
         {
             text: 'CV',
-            href: ''
+            href: '/cv'
         }
     ],
     hero: {
