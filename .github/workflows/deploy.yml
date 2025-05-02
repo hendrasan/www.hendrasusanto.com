@@ -22,7 +22,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to DigitalOcean
-        uses: appleboy/scp-action@master
+        uses: appleboy/scp-action@v0.1.3
         with:
           host: ${{ secrets.DO_HOST }}
           username: ${{ secrets.DO_USER }}
