@@ -28,7 +28,7 @@ jobs:
           username: ${{ secrets.DO_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: 'dist/*'
-          target: '/var/www/your-site'
+          target: '/var/www/www.hendrasusanto.com'
           strip_components: 1
           overwrite: true
 
