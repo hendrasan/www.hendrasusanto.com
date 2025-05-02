@@ -34,6 +34,7 @@ export type SiteConfig = {
     socialLinks?: Link[];
     hero?: Hero;
     subscribe?: Subscribe;
+    latestPostsAmount?: number;
     postsPerPage?: number;
     projectsPerPage?: number;
 };
@@ -91,6 +92,7 @@ const siteConfig: SiteConfig = {
         text: 'One update per week. All the latest posts directly in your inbox.',
         formUrl: '#'
     },
+    latestPostsAmount: 5,
     postsPerPage: 8,
     projectsPerPage: 8
 };
