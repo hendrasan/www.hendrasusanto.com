@@ -8,48 +8,40 @@ import { Image } from 'astro:assets';
 const hero = siteConfig.hero;
 ---
 
-{
-    (hero?.title || hero?.image?.src || hero?.text || (hero?.actions && hero.actions.length > 0)) && (
-        <section class="w-full flex flex-col gap-8 mb-16 sm:mb-24">
-            <div class="flex flex-col gap-4">
-                <Image src={me} alt="Hendra Susanto" width={128} height={128} class="w-16 h-16 rounded-full object-cover" loading="lazy" />
-                <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight">Hendra Susanto</h1>
+<section class="w-full flex flex-col gap-8 mb-16 sm:mb-24">
+    <div class="flex flex-col gap-4">
+        <Image src={me} alt="Hendra Susanto" width={128} height={128} class="w-16 h-16 rounded-full object-cover" loading="lazy" />
+        <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight">Hendra Susanto</h1>
+    </div>
+
+    <div class="max-w-none prose sm:prose-lg">
+        <p>
+            I'm a web developer with 10+ years of experience in front-end and back-end development. I like creating good interfaces and building things (that
+            might not be useful but fun).
+        </p>
+
+        <p>
+            Feel free to explore some of the things I've done on{' '}
+            <a target="_blank" href="https://github.com/hendrasan"> GitHub </a>{' '}
+            or get in touch at{' '}
+            <a target="_blank" href="mailto:anotherhendrasusanto@gmail.com"> anotherhendrasusanto@gmail.com </a>
+            .
+        </p>
+
+        <p>
+            I'm also open to new opportunities and collaborations and you can{' '}
+            <a target="_blank" href="/cv"> view my CV here </a>
+            .
+        </p>
+    </div>
+
+    {
+        hero && hero.actions && hero.actions.length > 0 && (
+            <div class="flex flex-wrap gap-4">
+                {hero.actions.map((action) => (
+                    <Button href={action.href}>{action.text}</Button>
+                ))}
             </div>
-
-            <div class="max-w-none prose sm:prose-lg">
-                <p>
-                    I'm a web developer with 10+ years of experience in front-end and back-end development. I like creating good interfaces and building things
-                    (that might not be useful but fun).
-                </p>
-
-                <p>
-                    Feel free to explore some of the things I've done on{' '}
-                    <a target="_blank" href="https://github.com/hendrasan">
-                        GitHub
-                    </a>{' '}
-                    or get in touch at{' '}
-                    <a target="_blank" href="mailto:anotherhendrasusanto@gmail.com">
-                        anotherhendrasusanto@gmail.com
-                    </a>
-                    .
-                </p>
-
-                <p>
-                    I'm also open to new opportunities and collaborations and you can{' '}
-                    <a target="_blank" href="/cv">
-                        view my CV here
-                    </a>
-                    .
-                </p>
-            </div>
-
-            {hero.actions && hero.actions.length > 0 && (
-                <div class="flex flex-wrap gap-4">
-                    {hero.actions.map((action) => (
-                        <Button href={action.href}>{action.text}</Button>
-                    ))}
-                </div>
-            )}
-        </section>
-    )
-}
+        )
+    }
+</section>
