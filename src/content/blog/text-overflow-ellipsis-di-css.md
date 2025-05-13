@@ -1,5 +1,5 @@
 ---
-title: Tentang text-overflow ellipsis di CSS
+title: Tentang text-overflow ellipsis di CSS
 excerpt: Sedikit penjelasan tentang text-overflow ellipsis di CSS
 publishDate: 'May 1 2025'
 isFeatured: true
