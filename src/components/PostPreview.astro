@@ -5,7 +5,7 @@ import FormattedDate from './FormattedDate.astro';
 
 type Props = { post: CollectionEntry<'blog'>; class?: string; headingLevel?: 'h2' | 'h3' };
 
-const { post, class: className, headingLevel = 'h2' } = Astro.props;
+const { post, class: className, headingLevel = 'h2', ...rest } = Astro.props;
 const { title, publishDate, updatedDate, excerpt } = post.data;
 const TitleTag = headingLevel;
 ---
@@ -14,6 +14,7 @@ const TitleTag = headingLevel;
     <div class="grow">
         <TitleTag
             class="text-xl leading-tight font-serif font-medium group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1 sm:text-2xl"
+            {...rest}
         >
             {title}
         </TitleTag>

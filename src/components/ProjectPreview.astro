@@ -4,7 +4,7 @@ import ArrowRight from '../icons/ArrowRight.astro';
 
 type Props = { project: CollectionEntry<'projects'>; class?: string; headingLevel?: 'h2' | 'h3' };
 
-const { project, class: className, headingLevel = 'h2' } = Astro.props;
+const { project, class: className, headingLevel = 'h2', ...rest } = Astro.props;
 const { title, description } = project.data;
 const TitleTag = headingLevel;
 ---
@@ -13,6 +13,7 @@ const TitleTag = headingLevel;
     <div class="grow">
         <TitleTag
             class="text-xl leading-tight font-serif font-medium group-hover:underline group-hover:decoration-dashed group-hover:underline-offset-4 group-hover:decoration-1 sm:text-2xl"
+            {...rest}
         >
             {title}
         </TitleTag>
