@@ -155,6 +155,11 @@
     ],
     "portfolios": [
         {
+            "name": "Regal MICE",
+            "url": "https://regalmice.co.uk",
+            "description": "A leading Destination Management Company based in the United Kingdom, specialising in curating seamless, bespoke experiences across the UK, Europe, and Asia. Built with Nuxt.js, Tailwind CSS, and API integration with Laravel backend"
+        },
+        {
             "name": "Baca Dhammapada",
             "url": "https://baca-dhammapada-nuxt.vercel.app",
             "description": "A simple web app to read Dhammapada in Indonesian. Built with Nuxt.js, Tailwind CSS, and API integration with Laravel backend"

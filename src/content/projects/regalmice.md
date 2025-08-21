@@ -14,7 +14,7 @@ isFeatured: true
 
 ## Project Overview
 
-Regal MICE is a travel management platform that provides end-to-end support for international students, offering tailored assistance from pre-arrival to post-graduation, and partnering with leading universities to ensure a smooth transition abroad.
+Regal MICE is a leading Destination Management Company based in the United Kingdom, specialising in curating seamless, bespoke experiences across the UK, Europe, and Asia. Currently, it provides end-to-end support for international students, offering tailored assistance from pre-arrival to post-graduation, and partnering with leading universities to ensure a smooth transition abroad.
 
 ## Features
 
