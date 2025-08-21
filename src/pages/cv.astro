@@ -9,96 +9,53 @@ const stripProtocols = (url: string) => {
 };
 ---
 
-<CvLayout <div class="hscv">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="py-12 flex flex-col gap-6">
-            <div class="font-bold font-inconsolata">
-                <h1 class="text-3xl">{cv.basics.name}</h1>
-                <h2 class="text-xl text-gray-400">{cv.basics.label}</h2>
-            </div>
+<CvLayout>
+    <div class="hscv">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="py-12 flex flex-col gap-10">
+                <div class="flex flex-col gap-6">
+                    <div class="font-bold font-inconsolata">
+                        <h1 class="text-3xl">{cv.basics.name}</h1>
+                        <h2 class="text-xl text-gray-400">{cv.basics.label}</h2>
+                    </div>
 
-            <p set:html={cv.basics.summary} />
+                    <p set:html={cv.basics.summary} />
 
-            <ul class="print:columns-2 md:columns-2 space-y-0.5">
-                <li class="flex items-center gap-1.5">
-                    <i class="fa fa-envelope w-4"></i>
-                    <a target="_blank" href={`mailto:${cv.basics.email}`}>{cv.basics.email}</a>
-                </li>
-                <li class="flex items-center gap-1.5"><i class="fa fa-phone w-4"></i> {cv.basics.phone}</li>
-                <li class="flex items-center gap-1.5">
-                    <i class="fa fa-globe w-4"></i>
-                    <a target="_blank" href={cv.basics.website}>{stripProtocols(cv.basics.website)}</a>
-                </li>
-                {
-                    cv.basics.profiles.map((profile) => (
+                    <ul class="print:columns-2 md:columns-2 space-y-0.5">
                         <li class="flex items-center gap-1.5">
-                            <i
-                                class="fa w-4"
-                                class:list={
-                                    profile.network === 'Github'
-                                        ? 'fa-github'
-                                        : profile.network === 'Linkedin'
-                                          ? 'fa-linkedin'
-                                          : profile.network === 'Codepen'
-                                            ? 'fa-codepen'
-                                            : 'fa-globe'
-                                }
-                            />
-                            <a target="_blank" href={profile.url}>
-                                {stripProtocols(profile.url)}
-                            </a>
+                            <i class="fa fa-envelope w-4"></i>
+                            <a target="_blank" href={`mailto:${cv.basics.email}`}>{cv.basics.email}</a>
                         </li>
-                    ))
-                }
-            </ul>
-
-            <hr class="border-gray-300" />
-
-            <div class="flex flex-col gap-8">
-                <div class="cv-section section-experience flex flex-col gap-4">
-                    <h2 class="font-inconsolata font-bold text-2xl">Employment</h2>
-                    <ul class="flex flex-col gap-6">
+                        <li class="flex items-center gap-1.5"><i class="fa fa-phone w-4"></i> {cv.basics.phone}</li>
+                        <li class="flex items-center gap-1.5">
+                            <i class="fa fa-globe w-4"></i>
+                            <a target="_blank" href={cv.basics.website}>{stripProtocols(cv.basics.website)}</a>
+                        </li>
                         {
-                            cv.work.map((work) => (
-                                <li class="flex flex-col gap-4">
-                                    <div class="mb-1">
-                                        <strong>{work.position}</strong> at <strong>{work.company}</strong>
-                                        <br />
-                                        {work.startDate} - {work.endDate}
-                                    </div>
-
-                                    <div set:html={work.summary} />
-
-                                    {work.highlights && (
-                                        <div class="flex flex-col gap-4">
-                                            <p>Some of the highlights during my employment here are:</p>
-                                            <ul class="list-disc pl-4">
-                                                {work.highlights.map((highlight) => (
-                                                    <li>{highlight}</li>
-                                                ))}
-                                            </ul>
-                                        </div>
-                                    )}
-                                    {work.responsibilities && (
-                                        <div class="flex flex-col gap-4">
-                                            <p>My responsibilities include:</p>
-                                            <ul class="list-disc pl-4">
-                                                {work.responsibilities.map((responsibility) => (
-                                                    <li>{responsibility}</li>
-                                                ))}
-                                            </ul>
-                                        </div>
-                                    )}
-                                    {work.skills && (
-                                        <div>
-                                            <p>Skills used: {work.skills.join(', ')}</p>
-                                        </div>
-                                    )}
+                            cv.basics.profiles.map((profile) => (
+                                <li class="flex items-center gap-1.5">
+                                    <i
+                                        class="fa w-4"
+                                        class:list={
+                                            profile.network === 'Github'
+                                                ? 'fa-github'
+                                                : profile.network === 'Linkedin'
+                                                  ? 'fa-linkedin'
+                                                  : profile.network === 'Codepen'
+                                                    ? 'fa-codepen'
+                                                    : 'fa-globe'
+                                        }
+                                    />
+                                    <a target="_blank" href={profile.url}>
+                                        {stripProtocols(profile.url)}
+                                    </a>
                                 </li>
                             ))
                         }
                     </ul>
                 </div>
+
+                <hr class="border-gray-300" />
 
                 <div class="cv-section flex flex-col gap-4">
                     <h2 class="font-inconsolata font-bold text-2xl">Technical Skills</h2>
@@ -117,39 +74,94 @@ const stripProtocols = (url: string) => {
                     </ul>
                 </div>
 
-                <div class="cv-section flex flex-col gap-4">
-                    <h2 class="font-inconsolata font-bold text-2xl">Selected Works</h2>
-                    {
-                        cv.portfolios.map((portfolio) => (
-                            <div class="work-ite flex flex-col gap-0.5">
-                                <div>
-                                    <strong>{portfolio.name}</strong>
-                                </div>
-                                <div>
-                                    <a target="_blank" href={portfolio.url}>
-                                        {stripProtocols(portfolio.url)}
-                                    </a>
-                                </div>
-                                {portfolio.description && <div>{portfolio.description}</div>}
-                            </div>
-                        ))
-                    }
-                </div>
+                <div class="flex flex-col gap-8">
+                    <div class="cv-section section-experience flex flex-col gap-4">
+                        <h2 class="font-inconsolata font-bold text-2xl">Professional Experience</h2>
+                        <ul class="flex flex-col gap-6">
+                            {
+                                cv.work.map((work) => (
+                                    <li class="flex flex-col gap-4">
+                                        <div class="mb-1">
+                                            <strong>{work.position}</strong> at <strong>{work.company}</strong>
+                                            <br />
+                                            {work.startDate} - {work.endDate}
+                                        </div>
 
-                <div class="cv-section flex flex-col gap-4">
-                    <h2 class="font-inconsolata font-bold text-2xl">Education</h2>
-                    <ul>
+                                        {work.summary && <div set:html={work.summary} />}
+
+                                        {work.list && (
+                                            <ul class="list-disc pl-4">
+                                                {work.list.map((l) => (
+                                                    <li>{l}</li>
+                                                ))}
+                                            </ul>
+                                        )}
+
+                                        {work.highlights && (
+                                            <div class="flex flex-col gap-4">
+                                                <p>Some of the highlights during my employment here are:</p>
+                                                <ul class="list-disc pl-4">
+                                                    {work.highlights.map((highlight) => (
+                                                        <li>{highlight}</li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        )}
+                                        {work.responsibilities && (
+                                            <div class="flex flex-col gap-4">
+                                                <p>My responsibilities include:</p>
+                                                <ul class="list-disc pl-4">
+                                                    {work.responsibilities.map((responsibility) => (
+                                                        <li>{responsibility}</li>
+                                                    ))}
+                                                </ul>
+                                            </div>
+                                        )}
+                                        {work.skills && (
+                                            <div>
+                                                <p>Skills used: {work.skills.join(', ')}</p>
+                                            </div>
+                                        )}
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+
+                    <div class="cv-section flex flex-col gap-4">
+                        <h2 class="font-inconsolata font-bold text-2xl">Selected Works</h2>
                         {
-                            cv.education.map((education) => (
-                                <li>
-                                    <strong>{education.institution}</strong> ({education.area})<br />
-                                    {education.startDate} - {education.endDate}
-                                    <br />
-                                    GPA: {education.gpa}
-                                </li>
+                            cv.portfolios.map((portfolio) => (
+                                <div class="work-ite flex flex-col gap-0.5">
+                                    <div>
+                                        <strong>{portfolio.name}</strong>
+                                    </div>
+                                    <div>
+                                        <a target="_blank" href={portfolio.url}>
+                                            {stripProtocols(portfolio.url)}
+                                        </a>
+                                    </div>
+                                    {portfolio.description && <div>{portfolio.description}</div>}
+                                </div>
                             ))
                         }
-                    </ul>
+                    </div>
+
+                    <div class="cv-section flex flex-col gap-4">
+                        <h2 class="font-inconsolata font-bold text-2xl">Education</h2>
+                        <ul>
+                            {
+                                cv.education.map((education) => (
+                                    <li>
+                                        <strong>{education.institution}</strong> ({education.area})<br />
+                                        {education.startDate} - {education.endDate}
+                                        <br />
+                                        GPA: {education.gpa}
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

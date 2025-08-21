@@ -1,10 +1,10 @@
 {
     "basics": {
         "name": "Hendra Susanto",
-        "label": "Web Developer",
+        "label": "Full-Stack Developer",
         "picture": "",
         "email": "anotherhendrasusanto@gmail.com",
-        "phone": "0896 0449 0888",
+        "phone": "089604490888",
         "website": "https://www.hendrasusanto.com",
         "summary": "Experienced web developer based in Jakarta with 10+ years of experience, capable in doing both front-end and back-end development. Proficient in CSS, JavaScript, Nuxt.js, Next.js for front-end development, Laravel and MySQL/PostgreSQL for back-end development.<br /><br />I'm familiar with modern workflows such as unit/integration testing, CI/CD, etc, and I'm adaptable to any specific workflows in different companies.",
         "location": {
@@ -46,7 +46,12 @@
             "company": "Cognotiv",
             "startDate": "Nov 2023",
             "endDate": "Jun 2024",
-            "summary": "My daily work revolves around revamping to new design and implementing new features",
+            "list": [
+                "Revamped entire frontend architecture using Vue.js 3 and TypeScript for better maintainability",
+                "Implemented responsive design system with Tailwind CSS, ensuring consistency across all devices",
+                "Enhanced user experience through modern UI/UX patterns",
+                "Collaborated closely with design team to achieve pixel-perfect implementation from Figma mockups"
+            ],
             "skills": ["Vue.js", "Typescript", "Tailwind CSS"]
         },
         {
@@ -57,19 +62,16 @@
             "endDate": "Oct 2022",
             "summary": "I led the team to build an influencer platform from its inception.<br /><br />Allstars is an influencer platform that enables brands and influencers to connect to each other, think job board but for influencer marketing.",
             "highlights": [
-                "Built a well functioning platform that houses more than 100 thousand social media accounts and more than 3 thousand published campaigns",
-                "Digitalize the internal process of the company by creating several internal dashboard for various purposes",
+                "Built a platform that houses 100,000+ social media accounts and support 3,000+  published campaigns",
+                "Streamlined operations by digitalizing the company internal process by creating internal dashboards for various purposes, reducing manual processes",
                 "Built a pipeline process to update the data of social media accounts"
             ],
             "responsibilities": [
-                "Involvements in Product Development from planning and detailing feature specification to implementation",
-                "Collaborate with Product Manager in developing the products",
-                "Based on analytics, discuss on new features to be developed and/or existing features to be improved",
-                "Provide technical consultations to other departments and/or to clients",
-                "Hands on daily coding on the development of the products",
-                "Setting up development standard, guideline and workflow",
+                "Product development planning and feature specification",
                 "Ensure the quality and deliverable of features based on the timeline and product roadmap",
-                "Provide mentoring to junior developers"
+                "Technical consultation for cross-functional teams and clients",
+                "Code quality assurance and development workflow optimization",
+                "Mentoring junior developers and establishing coding standards"
             ],
             "skills": ["Laravel", "MySQL", "CSS", "Javascript", "Vue.js"]
         },
@@ -82,11 +84,10 @@
             "summary": "As Technical Lead, besides doing hands-on coding daily, other responsibilites include setting up development standard, guideline and workflow and mentoring for the team, provide technical consultations to other departments and/or to clients",
             "responsibilities": [
                 "Work closely with the development team, identifying each member's strength and weakness",
-                "Provide guidance and mentoring to team members",
-                "Keep up to date with latest technology and implement them as needed",
-                "Set up development standard, guideline and workflow for the team",
-                "Ensure the highest possible quality of works that can be delivered within the provided timeline",
-                "Provide technical consultations to other departments and/or to clients"
+                "Mentoring junior developers and establishing coding standards",
+                "Code quality assurance and development workflow optimization",
+                "Ensure the quality and deliverable of features based on the timeline and product roadmap",
+                "Technical consultation for cross-functional teams and clients"
             ],
             "skills": ["Laravel", "MySQL", "CSS", "Javascript", "Vue.js"]
         },
@@ -96,7 +97,7 @@
             "website": "https://mirumagency.com",
             "startDate": "Apr 2014",
             "endDate": "Feb 2015",
-            "summary": "Job description is like Senior Web Developer, with extra responsibility to provide guidance and mentorship to other developers"
+            "list": ["Promoted to management role with expanded mentorship responsibilities", "Guided development team on best practices and project delivery"]
         },
         {
             "company": "XM Gravity",
@@ -104,7 +105,10 @@
             "website": "https://mirumagency.com",
             "startDate": "Oct 2011",
             "endDate": "Mar 2014",
-            "summary": "Develop and maintain client websites (primarily ibudanbalita.com) using PHP (Laravel), MySQL, CSS3, jQuery, AJAX"
+            "list": [
+                "Developed and maintained high-traffic websites using PHP/Laravel and MySQL",
+                "Key Project: Built and maintained ibudanbalita.com, a popular parenting portal"
+            ]
         }
     ],
     "education": [
@@ -130,8 +134,8 @@
             "name": "Front-end Development",
             "level": "Proficient",
             "keywords": [
-                "HTML",
-                "CSS",
+                "HTML5",
+                "CSS3",
                 "Tailwind CSS",
                 "Javascript",
                 "Typescript",
@@ -145,39 +149,39 @@
         {
             "name": "Back-end Development",
             "level": "Proficient",
-            "keywords": ["PHP", "Laravel", "MySQL/PostgreSQL", "Node.js (Express)"]
+            "keywords": ["PHP", "Laravel", "Node.js", "Express.js", "MySQL", "PostgreSQL"]
         },
         {
-            "name": "Others",
+            "name": "Tools/Workflows",
             "level": "Proficient",
-            "keywords": ["Git", "Gulp", "Figma", "PageSpeed Optimization"]
+            "keywords": ["Git", "CI/CD", "Figma", "PageSpeed Optimization"]
         }
     ],
     "portfolios": [
         {
             "name": "Regal MICE",
             "url": "https://regalmice.co.uk",
-            "description": "A leading Destination Management Company based in the United Kingdom, specialising in curating seamless, bespoke experiences across the UK, Europe, and Asia. Built with Nuxt.js, Tailwind CSS, and API integration with Laravel backend"
+            "description": "A Destination Management Company based in the United Kingdom, specialising in curating seamless, bespoke experiences across the UK, Europe, and Asia. Built with Nuxt.js, Tailwind CSS, and API integration with Laravel backend"
         },
         {
             "name": "Baca Dhammapada",
             "url": "https://baca-dhammapada-nuxt.vercel.app",
-            "description": "A simple web app to read Dhammapada in Indonesian. Built with Nuxt.js, Tailwind CSS, and API integration with Laravel backend"
+            "description": "A simple web app to read Dhammapada in Indonesian. Built with Nuxt.js, Tailwind CSS, and API with Laravel"
         },
         {
             "name": "Onesmile Doctor Portal",
             "url": "https://onesmile-git-frontend-hendrasusanto.vercel.app",
-            "description": "Platform for Dentists and Orthodontists to order aligner treatments for their patients. Development is finished but still awaiting for deployment to production. Built with Nuxt.js, Tailwind CSS, and API integration with Laravel backend"
+            "description": "Comprehensive platform for dentists to manage aligner treatments with intuitive dashboard. Built with Nuxt.js, Tailwind CSS, and API integration with Laravel backend"
         },
         {
             "name": "Wordle ID",
             "url": "https://wordle-id.vercel.app",
-            "description": "A Wordle clone, similar with Katla but with endless mode. Built with Next.js"
+            "description": "A Wordle clone with Bahasa Indonesia puzzles, featuring endless gameplay mode and responsive design. Built with Next.js"
         },
         {
             "name": "Allstars",
             "url": "https://www.allstars.id",
-            "description": "A platform for influencer looking for works and brands looking for influencers. Separated into influencer-facing and client-facing dashboards/platforms to ease the collaboration process. Built with Laravel, MySQL, jQuery and CSS"
+            "description": "A platform for influencer looking for works and brands looking for influencers. Separate platforms for brands and creators. Built with Laravel, MySQL, jQuery and CSS"
         },
         {
             "name": "Saga",
